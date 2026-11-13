@@ -467,3 +467,241 @@
           <li><a href="#projects">Projects</a></li>
           <li><a href="#skills">Skills</a></li>
           <li><a href="#experience">Experience</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero / About -->
+  <section class="hero" id="about">
+    <div class="container">
+      <span class="badge">Cybersecurity &amp; GRC Analyst</span>
+      <h1>Nithin Javvaji</h1>
+      <p>A detail-oriented analyst specializing in tracking network threats, investigating system vulnerabilities, and solving complex security problems. I combine a strong foundation in technology management and data-driven analysis to help organizations enforce compliance regulations, manage operational risk, and protect critical data infrastructure.</p>
+      <div class="meta-grid">
+        <div class="meta-item">
+          <strong>Education</strong>
+          M.S. Technology Management — Avila University
+        </div>
+        <div class="meta-item">
+          <strong>Experience</strong>
+          Senior Associate, Synchrony Financial (2022 – 2024)
+        </div>
+        <div class="meta-item">
+          <strong>Certification</strong>
+          Google Cybersecurity Professional Certificate — Completed Nov 2026
+        </div>
+        <div class="meta-item">
+          <strong>Focus</strong>
+          GRC · SOC Operations · Network Security
+        </div>
+      </div>
+      <div class="btn-group">
+        <a href="#projects" class="btn btn-primary">View Projects</a>
+        <a href="https://www.linkedin.com/in/nithinjavvaji/" target="_blank" rel="noopener" class="btn btn-outline">LinkedIn</a>
+        <a href="https://github.com/njavvaji2001" target="_blank" rel="noopener" class="btn btn-outline">GitHub</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects">
+    <div class="container">
+      <h2 class="section-title">🛡️ Featured Projects</h2>
+      <p class="section-subtitle">Hands-on security engineering and risk governance work — select a project to see the full case study.</p>
+
+      <div class="project-tabs">
+        <button class="tab-btn active" data-target="panel-botium">Botium Toys — Risk Assessment &amp; Compliance Audit</button>
+        <button class="tab-btn" data-target="panel-omniscan">OmniScan — Network Recon Utility</button>
+      </div>
+
+      <!-- Botium Toys -->
+      <div class="project-panel active" id="panel-botium">
+        <h3>🏢 Enterprise Risk Assessment &amp; Compliance Audit (Botium Toys)</h3>
+        <div class="skill-tags">
+          <span class="tag">GRC Framework Mapping</span>
+          <span class="tag">NIST CSF</span>
+          <span class="tag">PCI-DSS</span>
+          <span class="tag">GDPR</span>
+          <span class="tag">SOC 2</span>
+          <span class="tag">Access Control Auditing</span>
+        </div>
+        <p>Executed a comprehensive internal security audit and controls assessment for a mock e-commerce retailer. Evaluated current organizational defenses against established compliance frameworks, identified critical security gaps — lack of encryption, least privilege violations, and unmonitored legacy infrastructure — and generated structured strategic recommendations to mitigate business risk and satisfy international privacy laws.</p>
+
+        <h4 class="sub-heading">📊 Controls Assessment Matrix</h4>
+        <div class="table-wrapper">
+          <table>
+            <thead>
+              <tr>
+                <th>Status</th>
+                <th>Control Audited</th>
+                <th>Identified Operational Vulnerability</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="status-fail">✕ FAIL</td>
+                <td><strong>Least Privilege &amp; IAM</strong></td>
+                <td>Access controls are not restricted; employees hold unnecessary privileges to sensitive customer data.</td>
+              </tr>
+              <tr>
+                <td class="status-fail">✕ FAIL</td>
+                <td><strong>Data Encryption</strong></td>
+                <td>Account numbers, transaction data, and PII/SPII are processed and stored locally in cleartext.</td>
+              </tr>
+              <tr>
+                <td class="status-fail">✕ FAIL</td>
+                <td><strong>Network Visibility (IDS)</strong></td>
+                <td>No Intrusion Detection System is deployed to monitor anomalous network telemetry traffic.</td>
+              </tr>
+              <tr>
+                <td class="status-fail">✕ FAIL</td>
+                <td><strong>Disaster Recovery &amp; Backups</strong></td>
+                <td>Complete absence of critical data backups and business continuity frameworks.</td>
+              </tr>
+              <tr>
+                <td class="status-fail">✕ FAIL</td>
+                <td><strong>Legacy Systems Monitor</strong></td>
+                <td>Internal legacy systems lack formalized manual monitoring, maintenance, and intervention controls.</td>
+              </tr>
+              <tr>
+                <td class="status-pass">✓ PASS</td>
+                <td><strong>Firewall &amp; Antivirus</strong></td>
+                <td>Perimeter firewall rules and client antivirus agents are successfully deployed and monitored.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h4 class="sub-heading">⚖️ Regulatory Compliance Gap Analysis</h4>
+        <ul class="styled-list">
+          <li><strong>PCI-DSS:</strong> Non-compliant due to unencrypted cardholder data storage and lack of secure password management pipelines.</li>
+          <li><strong>GDPR:</strong> Violates data confidentiality standards because sensitive EU customer PII is accessible to unauthorized internal users.</li>
+          <li><strong>SOC 2 Type II:</strong> Fails core privacy and confidentiality trust principles due to a lack of defined user access policies.</li>
+        </ul>
+
+        <h4 class="sub-heading">🛠️ Core Remediation Recommendations Submitted to IT Leadership</h4>
+        <ul class="styled-list">
+          <li><strong>1. Enforce Role-Based Access Controls (RBAC):</strong> Restrict system data access using the Principle of Least Privilege (PoLP) to isolate cardholder environments.</li>
+          <li><strong>2. Deploy Cryptographic Controls:</strong> Implement AES-256 encryption configurations for all sensitive customer assets at rest and in transit.</li>
+          <li><strong>3. Establish Sentinel Infrastructure:</strong> Integrate a centralized IDS loop and formalize standard manual intervention protocols for legacy environments.</li>
+        </ul>
+      </div>
+
+      <!-- OmniScan -->
+      <div class="project-panel" id="panel-omniscan">
+        <h3>📱 OmniScan: Multi-Threaded Network Reconnaissance Utility</h3>
+        <div class="skill-tags">
+          <span class="tag">Python Automation</span>
+          <span class="tag">Socket Probing</span>
+          <span class="tag">Packet Tracking</span>
+          <span class="tag">Network Monitoring</span>
+          <span class="tag">Incident Detection</span>
+        </div>
+        <p>Designed and engineered an asynchronous local network discovery application that utilizes concurrent ICMP sweeps to inventory an entire local subnet range in under 5 seconds. Bypasses standard OS privacy limits by securely extracting hardware MAC addresses from native system ARP caches, executing targeted vulnerability port audits (FTP, SSH, HTTP, SMB), and exporting live security telemetry data into downloadable spreadsheet formats.</p>
+        <ul class="styled-list">
+          <li><strong>Concurrent ICMP sweeps:</strong> Inventories a full local subnet in under 5 seconds using async scanning.</li>
+          <li><strong>MAC address extraction:</strong> Reads hardware addresses from the native system ARP cache without elevated privileges.</li>
+          <li><strong>Targeted port audits:</strong> Probes FTP, SSH, HTTP, and SMB for open services and misconfigurations.</li>
+          <li><strong>Telemetry export:</strong> Exports live scan results to downloadable spreadsheet formats for reporting.</li>
+        </ul>
+        <div class="btn-group" style="margin-top: 1.5rem;">
+          <a href="https://github.com/njavvaji2001/omniscan-network-recon" target="_blank" rel="noopener" class="btn btn-outline">📦 View Source Code &amp; Documentation</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills">
+    <div class="container">
+      <h2 class="section-title">🗂️ Core Competencies &amp; Technical Skills</h2>
+      <p class="section-subtitle">The frameworks, operations, and tooling I work with day to day.</p>
+      <div class="grid-3">
+        <div class="card">
+          <h3>1. Governance, Risk &amp; Compliance (GRC)</h3>
+          <ul>
+            <li><strong>Framework mastery:</strong> Deep conceptual understanding of the <strong>NIST Cybersecurity Framework (CSF)</strong>, <strong>Risk Management Framework (RMF)</strong>, and security auditing workflows.</li>
+            <li><strong>Risk &amp; access controls:</strong> Well-versed in <strong>Identity &amp; Access Management (IAM)</strong>, Third-Party Risk Management (TPRM), asset management, and Data Loss Prevention (DLP) protocols to strictly enforce the Principle of Least Privilege.</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>2. Defensive Operations &amp; Application Security</h3>
+          <ul>
+            <li><strong>Vulnerability frameworks:</strong> Core focus on tracking <strong>OWASP Top 10</strong> web application risks, specializing in remediating <em>Broken Access Control</em> and <em>Injection Attacks (SQLi)</em> through proper input sanitization and parameterized query architecture.</li>
+            <li><strong>Network security foundations:</strong> Extensively trained in network monitoring tools, secure network models, and role-based access controls (RBAC).</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>3. Technical Security Toolkit</h3>
+          <ul>
+            <li><strong>SIEM operations:</strong> Ingestion, query parsing, and log analysis utilizing <strong>Splunk</strong> and <strong>Google SecOps (Chronicle)</strong> platforms.</li>
+            <li><strong>Languages &amp; automation:</strong> <strong>Python</strong> (defensive automation scripts), <strong>SQL</strong> (log querying &amp; data filtering), and <strong>Linux Command Line</strong> system navigation.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience & Certifications -->
+  <section id="experience">
+    <div class="container">
+      <h2 class="section-title">💼 Experience</h2>
+      <p class="section-subtitle">Professional background and credentials.</p>
+
+      <div class="timeline-card">
+        <div class="timeline-header">
+          <h3>Senior Associate — Synchrony Financial, Hyderabad, India</h3>
+          <span class="timeline-date">2022 – 2024</span>
+        </div>
+        <ul class="styled-list">
+          <li>Utilized strong analytical thinking and data-driven decision-making to evaluate operational trends and implement process improvements, earning an official <strong>Excellence Award</strong>.</li>
+          <li>Collaborated directly with cross-functional leadership to deliver actionable insights based on core business needs, driving team efficiency and customer service enhancements.</li>
+        </ul>
+      </div>
+
+      <h3 class="sub-heading">📜 Professional Licenses &amp; Certifications</h3>
+      <div class="cert-grid">
+        <div class="cert-item">
+          <h4>Google Cybersecurity Professional Certificate</h4>
+          <span>Coursera / Google — Completed November 2026</span>
+        </div>
+        <div class="cert-item">
+          <h4>Cisco Network Security Certification</h4>
+          <span>Cisco — Network Models &amp; RBAC</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer / Contact -->
+  <footer id="contact">
+    <p>Thank you for visiting my professional security hub. Feel free to connect with me on LinkedIn to discuss career opportunities, framework compliance, or collaborative security engineering!</p>
+    <div class="btn-group" style="justify-content: center;">
+      <a href="https://www.linkedin.com/in/nithinjavvaji/" target="_blank" rel="noopener" class="btn btn-outline">Connect on LinkedIn</a>
+      <a href="https://github.com/njavvaji2001" target="_blank" rel="noopener" class="btn btn-outline">GitHub Repository Hub</a>
+    </div>
+    <p style="margin-top: 1.5rem; font-size: 0.85rem;">© 2026 Nithin Javvaji · Cybersecurity &amp; GRC Analyst</p>
+  </footer>
+
+  <script>
+    // Project tab switching
+    document.querySelectorAll('.tab-btn').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        document.querySelectorAll('.tab-btn').forEach(function (b) {
+          b.classList.remove('active');
+        });
+        document.querySelectorAll('.project-panel').forEach(function (p) {
+          p.classList.remove('active');
+        });
+        btn.classList.add('active');
+        var panel = document.getElementById(btn.getAttribute('data-target'));
+        if (panel) {
+          panel.classList.add('active');
+        }
+      });
+    });
+  </script>
+</body>
+</html>
