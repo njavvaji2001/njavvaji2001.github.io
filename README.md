@@ -10,7 +10,7 @@ Welcome to my security engineering and risk governance hub. I am a detail-orient
 
 ## 🚀 Featured Cybersecurity Engineering Projects
 ### 🏢 Case Study: Enterprise Risk Assessment & Compliance Audit (Botium Toys)
-* **Core Skills:** GRC Framework Mapping, NIST CSF, PCI-DSS, GDPR, SOC 2 Compliance, Access Control Auditing.
+* **Core Skills:** GRC Framework Mapping, NIST CSF, PCI-DSS, GDPR, SOC 1 Compliance, Access Control Auditing.
 * **Description:** Executed a comprehensive internal security audit and controls assessment for a mock e-commerce retailer. Evaluated current organizational defenses against established compliance frameworks, identified critical security gaps (lack of encryption, least privilege violations, and unmonitored legacy infrastructure), and generated structured strategic recommendations to mitigate business risk and satisfy international privacy laws.
 
 #### 📊 Controls Assessment Matrix
